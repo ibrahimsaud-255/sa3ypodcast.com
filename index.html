@@ -80,6 +80,20 @@ header{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.82);backdrop-filt
 .gallery figure:hover img{transform:scale(1.06)}
 .ph{display:grid;place-items:center;height:100%;color:#55555c;font-size:14px;text-align:center;padding:10px}
 
+/* برامج من إنتاجنا */
+.progs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+@media(max-width:760px){.progs{grid-template-columns:1fr}}
+.prog{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.2s;display:block}
+.prog:hover{border-color:var(--accent);transform:translateY(-3px)}
+.prog .thumb{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.prog .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.prog:hover .thumb img{transform:scale(1.05)}
+.prog .thumb::after{content:"▶";position:absolute;inset:0;display:grid;place-items:center;font-size:30px;color:#fff;background:rgba(0,0,0,.3)}
+.prog .body{padding:18px}
+.prog h3{margin:0 0 6px;font-size:18px}
+.prog p{margin:0;color:var(--muted);font-size:14px}
+.prog .tag{display:inline-block;margin-top:10px;color:var(--accent);font-size:13px;font-weight:700}
+
 /* تابعنا */
 #follow{text-align:center}
 .socials{display:flex;gap:16px;justify-content:center;margin-top:24px;flex-wrap:wrap}
@@ -103,6 +117,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 </a>
 <nav class="menu" id="menu">
 <a href="#about">عن سَعي</a>
+<a href="#programs">من إنتاجنا</a>
 <a href="#services">الخدمات</a>
 <a href="#studio">الاستوديو</a>
 <a href="#follow">تابعنا</a>
@@ -137,6 +152,36 @@ footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:v
 </div>
 </div>
 <div class="note"><b>رسالتنا:</b> المعرفة المتخصصة حقّ للجميع. مهمتنا أن نأخذ ما هو معقّد ونعيد تقديمه بلغة يفهمها كل مستمع، فيخرج بفائدة يطبّقها في حياته.</div>
+</div>
+</section>
+
+<section id="programs">
+<div class="wrap">
+<div class="eyebrow">من إنتاجنا</div>
+<h2 class="title">برامج وبودكاست من إنتاجنا</h2>
+<p class="lead">أعمال أنتجناها وقدّمناها — من برامج تقنية ومعرفية إلى بودكاست حواري. اضغط أي بطاقة لمشاهدتها على يوتيوب.</p>
+<div class="progs">
+<a class="prog" href="https://www.youtube.com/watch?v=inCmiqVSnIQ&list=PL3BjsAHgaCzbaadRYhtrDqcMLaBT5nBVF" target="_blank" rel="noopener">
+<div class="thumb"><img src="https://img.youtube.com/vi/inCmiqVSnIQ/hqdefault.jpg" alt="رقمنة" loading="lazy"></div>
+<div class="body"><h3>رقمنة — التقنية والذكاء الاصطناعي</h3><p>برنامج من ١٥ حلقة عن التقنية والذكاء الاصطناعي، مع المهندس أحمد الزيادات.</p><span class="tag">١٥ حلقة · مشاهدة ↗</span></div>
+</a>
+<a class="prog" href="https://www.youtube.com/watch?v=iU9dl6OCejQ&list=PL3BjsAHgaCzbr5W9nN8YL6rDf4tkvG2Kn" target="_blank" rel="noopener">
+<div class="thumb"><img src="https://img.youtube.com/vi/iU9dl6OCejQ/hqdefault.jpg" alt="آخر فقرة" loading="lazy"></div>
+<div class="body"><h3>آخر فقرة — شرح كتب</h3><p>شرح كتب حلقة حلقة: «صناعة المستهلك» و«متلازمة التيك توك».</p><span class="tag">موسمان · مشاهدة ↗</span></div>
+</a>
+<a class="prog" href="https://www.youtube.com/watch?v=h9WQT7gMP6E&list=PLWFi7GIBTmLJrXIWM6PlYEHOy-LDA4rRg" target="_blank" rel="noopener">
+<div class="thumb"><img src="https://img.youtube.com/vi/h9WQT7gMP6E/hqdefault.jpg" alt="يا غلام" loading="lazy"></div>
+<div class="body"><h3>بودكاست يا غلام</h3><p>بودكاست حواري — تقديم وإعداد، بالتعاون مع قناة فلق والمدونة استديو.</p><span class="tag">مشاهدة ↗</span></div>
+</a>
+<a class="prog" href="https://www.youtube.com/watch?v=38fVZn6OX1U&list=PL3BjsAHgaCzaYHMoLnjODgHrlaXFCizSe" target="_blank" rel="noopener">
+<div class="thumb"><img src="https://img.youtube.com/vi/38fVZn6OX1U/hqdefault.jpg" alt="في الخاطر" loading="lazy"></div>
+<div class="body"><h3>في الخاطر — برنامج ساخر</h3><p>برنامج قصير ساخر يتكلّم عن أشياء «في الخاطر».</p><span class="tag">٤ حلقات · مشاهدة ↗</span></div>
+</a>
+<a class="prog" href="https://www.youtube.com/watch?v=FrTmum7RIbw&list=PL3BjsAHgaCzYb3XwijX4iIQj5unA4RrmL" target="_blank" rel="noopener">
+<div class="thumb"><img src="https://img.youtube.com/vi/FrTmum7RIbw/hqdefault.jpg" alt="قوت" loading="lazy"></div>
+<div class="body"><h3>قِوت — إنتاج تجريبي</h3><p>برنامج أنتجنا منه حلقتين ومقاطع تشويقية.</p><span class="tag">مشاهدة ↗</span></div>
+</a>
+</div>
 </div>
 </section>
 
