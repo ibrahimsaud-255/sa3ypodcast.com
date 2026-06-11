@@ -307,8 +307,7 @@ if(err) err.textContent='⚠️ لم يُربط الرابط بعد. راجع د
 btn.disabled=false; btn.textContent='إرسال وحجز الموعد ✓'; return;
 }
 try{
-await fetch(WEBAPP_URL,{method:'POST',mode:'no-cors',
-headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});
+await new Promise(function(resolve){var xhr=new XMLHttpRequest();xhr.open('POST',WEBAPP_URL,true);xhr.setRequestHeader('Content-Type','text/plain;charset=utf-8');xhr.onloadend=function(){resolve();};xhr.send(JSON.stringify(data));});
 show(pages.length-1);
 }catch(err){
 const e2=pages[idx].querySelector('[data-err]');
